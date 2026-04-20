@@ -7,14 +7,17 @@ import java.util.Scanner;
 public class UserInput {
     private Scanner scanner;
 
+    // Constructor
     public UserInput() {
         scanner = new Scanner(System.in);
     }
 
+    // Generic ArrayList to store Assignment objects
     public ArrayList<Assignment> getAssignments() {
         ArrayList<Assignment> assignments = new ArrayList<>();
         int numAssignments = 0;
 
+        // Ask user how many assignments they want to enter
         while (true) {
             try {
                 System.out.print("How many assignments do you want to enter? ");
@@ -32,13 +35,16 @@ public class UserInput {
             }
         }
 
+        // Loop for each assignment
         for (int i = 0; i < numAssignments; i++) {
             System.out.println("\nEnter information for assignment #" + (i + 1));
 
             System.out.print("Assignment name: ");
             String name = scanner.nextLine();
 
+            // Get due date
             LocalDate dueDate = null;
+
             while (true) {
                 try {
                     System.out.print("Due date (YYYY-MM-DD): ");
@@ -85,7 +91,9 @@ public class UserInput {
                 }
             }
 
+            // Create Assignment object
             Assignment assignment = new Assignment(name, dueDate, estimatedHours, reminderDays);
+            // Add object to list
             assignments.add(assignment);
         }
 

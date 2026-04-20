@@ -1,11 +1,14 @@
 import java.time.LocalDate;
 
 public class Assignment {
+
+    // Variables for each assignment
     private String name;
     private LocalDate dueDate;
     private double estimatedHours;
     private int reminderDays;
 
+    // Constructor to create Assignment object
     public Assignment(String name, LocalDate dueDate, double estimatedHours, int reminderDays) {
         this.name = name;
         this.dueDate = dueDate;
@@ -13,6 +16,7 @@ public class Assignment {
         this.reminderDays = reminderDays;
     }
 
+    // Getter methods
     public String getName() {
         return name;
     }

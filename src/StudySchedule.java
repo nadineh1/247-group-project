@@ -7,6 +7,7 @@ import java.util.Comparator;
 public class StudySchedule {
     private ArrayList<Assignment> assignments;
 
+    // Constructor
     public StudySchedule(ArrayList<Assignment> assignments) {
         this.assignments = assignments;
     }
@@ -24,13 +25,16 @@ public class StudySchedule {
         }
     }
 
+    // Calculate study hours per day
     public void displayDailyWorkload() {
         System.out.println("\n- DAILY STUDY WORKLOAD -");
         LocalDate today = LocalDate.now();
 
         for (Assignment assignment : assignments) {
+            // Find number of days until due date
             long daysLeft = ChronoUnit.DAYS.between(today, assignment.getDueDate());
 
+            // Prevent dividing by zero
             if (daysLeft <= 0) {
                 daysLeft = 1;
             }
