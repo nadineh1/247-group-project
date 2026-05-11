@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
+/**
+ * Manages assignments by sorting them
+ * and calculating daily study workload.
+ */
+
 public class StudySchedule {
     private ArrayList<Assignment> assignments;
 

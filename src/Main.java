@@ -1,5 +1,9 @@
 import java.util.ArrayList;
 
+/**
+ * Main class that runs the Study Schedule Program.
+ */
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to the Study Schedule Program!");

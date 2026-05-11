@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Handles user input and validates data entered
+ * through the Scanner.
+ */
+
 public class UserInput {
     private Scanner scanner;
 

@@ -1,5 +1,10 @@
 import java.time.LocalDate;
 
+/**
+ * Represents a school assignment with a due date,
+ * estimated study hours, and reminder settings.
+ */
+
 <<<<<<< HEAD
 public class Assignment extends Task {
 

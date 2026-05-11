@@ -1,5 +1,10 @@
 import java.time.LocalDate;
 
+/**
+ * Abstract parent class that represents a general task.
+ * Assignment inherits from this class.
+ */
+
 // Abstract class that represents a general task.
 // Assignment will inherit from this class.
 

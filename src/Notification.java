@@ -1,6 +1,10 @@
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
+/**
+ * Sends reminders for assignments that are due soon.
+ */
+
 public class Notification implements Reminder {
 
     // Implement reminder method
