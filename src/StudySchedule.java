@@ -63,8 +63,5 @@ public class StudySchedule {
     public ArrayList<Assignment> getAssignments() {
         return assignments;
     }
-<<<<<<< HEAD
 }
-=======
 }
->>>>>>> 85678fe32d027abcc0ad39bafd1001c9872b5dd9
