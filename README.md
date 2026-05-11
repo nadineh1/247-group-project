@@ -48,24 +48,6 @@ src/
 
 ---
 
-## Getting Started
-
-### Prerequisites
-
-- Java 17 or higher
-- IntelliJ IDEA (recommended) or any Java IDE
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/nadineh1/247-group-project
-   ```
-2. Open the project in IntelliJ IDEA.
-3. Build and run `Main.java`.
-
----
-
 ## Usage
 
 1. Run the program.
@@ -77,18 +59,6 @@ src/
 4. The program will display a sorted summary of your assignments — most urgent first — along with a recommended number of hours to study per day for each one.
 5. Set your preferred reminder notification timing.
 
-**Example Output:**
-```
-=== Your Study Schedule ===
-
-1. Research Paper      | Due: Apr 14 | 2.5 hrs/day  (5 hrs over 2 days)
-2. Math Problem Set    | Due: Apr 17 | 1.0 hrs/day  (3 hrs over 3 days)
-3. History Reading     | Due: Apr 22 | 0.8 hrs/day  (6 hrs over 7 days)
-
-Reminder set: 1 day before each deadline.
-```
-
----
 
 ## UML Diagram
 
@@ -101,9 +71,9 @@ Reminder set: 1 day before each deadline.
 | Name | Role |
 |------|------|
 | Sarah Beasley | Project Management |
-| Rameen Ayan | Java Docs |
+| Rameen Ayan | Team Member |
 | Nadine Hatabeh | Programmer |
-| Ayo Akinmade | UML Diagram |
+| Ayo Akinmade | Debugging |
 
 ---
 
