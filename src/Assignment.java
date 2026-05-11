@@ -4,6 +4,8 @@ import java.time.LocalDate;
  * Represents a school assignment with a due date,
  * estimated study hours, and reminder settings.
  */
+
+// Inheritance: Assignment extends Task
 public class Assignment extends Task {
 
     // Variables for each assignment
@@ -11,8 +13,7 @@ public class Assignment extends Task {
     private int reminderDays;
 
     // Constructor
-    public Assignment(String name, LocalDate dueDate,
-                      double estimatedHours, int reminderDays) {
+    public Assignment(String name, LocalDate dueDate, double estimatedHours, int reminderDays) {
 
         super(name, dueDate);
 
@@ -21,8 +22,7 @@ public class Assignment extends Task {
     }
 
     // Overloaded constructor
-    public Assignment(String name, LocalDate dueDate,
-                      double estimatedHours) {
+    public Assignment(String name, LocalDate dueDate, double estimatedHours) {
 
         super(name, dueDate);
 
@@ -42,6 +42,7 @@ public class Assignment extends Task {
     }
 
     // Required abstract method from Task
+    // Method overriding from Task class
     @Override
     public String getPriorityLevel() {
 
@@ -58,7 +59,7 @@ public class Assignment extends Task {
         }
     }
 
-    // Method overriding
+    // Method overriding from Task class
     @Override
     public String toString() {
 

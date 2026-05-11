@@ -19,11 +19,13 @@ public class UserInput {
 
     // Generic ArrayList to store Assignment objects
     public ArrayList<Assignment> getAssignments() {
+        // Java Collection using Generics
         ArrayList<Assignment> assignments = new ArrayList<>();
         int numAssignments = 0;
 
         // Ask user how many assignments they want to enter
         while (true) {
+            // Exception handling for invalid input
             try {
                 System.out.print("How many assignments do you want to enter? ");
                 numAssignments = scanner.nextInt();
@@ -51,6 +53,7 @@ public class UserInput {
             LocalDate dueDate = null;
 
             while (true) {
+                // Exception handling for invalid input
                 try {
                     System.out.print("Due date (YYYY-MM-DD): ");
                     dueDate = LocalDate.parse(scanner.nextLine());
@@ -62,6 +65,7 @@ public class UserInput {
 
             double estimatedHours = 0;
             while (true) {
+                // Exception handling for invalid input
                 try {
                     System.out.print("Estimated hours needed: ");
                     estimatedHours = scanner.nextDouble();
@@ -80,6 +84,7 @@ public class UserInput {
 
             int reminderDays = 0;
             while (true) {
+                // Exception handling for invalid input
                 try {
                     System.out.print("How many days before the due date do you want a reminder? ");
                     reminderDays = scanner.nextInt();
