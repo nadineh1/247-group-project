@@ -64,4 +64,4 @@ public class StudySchedule {
         return assignments;
     }
 }
-}
+

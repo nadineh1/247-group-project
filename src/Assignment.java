@@ -4,57 +4,35 @@ import java.time.LocalDate;
  * Represents a school assignment with a due date,
  * estimated study hours, and reminder settings.
  */
-
 public class Assignment extends Task {
 
     // Variables for each assignment
     private double estimatedHours;
     private int reminderDays;
 
+    // Constructor
+    public Assignment(String name, LocalDate dueDate,
+                      double estimatedHours, int reminderDays) {
 
-    // Constructor to create Assignment object
-    public Assignment(String name, LocalDate dueDate, double estimatedHours, int reminderDays) {
-
-        // Call parent constructor first
         super(name, dueDate);
+
         this.estimatedHours = estimatedHours;
         this.reminderDays = reminderDays;
-            }
+    }
 
     // Overloaded constructor
-    public Assignment(String name, LocalDate dueDate, double estimatedHours) {
+    public Assignment(String name, LocalDate dueDate,
+                      double estimatedHours) {
 
         super(name, dueDate);
 
         this.estimatedHours = estimatedHours;
 
-    // Default reminder value
+        // Default reminder value
         this.reminderDays = 1;
-public class Assignment {
-
-    // Variables for each assignment
-    private String name;
-    private LocalDate dueDate;
-    private double estimatedHours;
-    private int reminderDays;
-
-    // Constructor to create Assignment object
-    public Assignment(String name, LocalDate dueDate, double estimatedHours, int reminderDays) {
-        this.name = name;
-        this.dueDate = dueDate;
-        this.estimatedHours = estimatedHours;
-        this.reminderDays = reminderDays;
     }
 
     // Getter methods
-    public String getName() {
-        return name;
-    }
-
-    public LocalDate getDueDate() {
-        return dueDate;
-    }
-
     public double getEstimatedHours() {
         return estimatedHours;
     }
@@ -69,24 +47,25 @@ public class Assignment {
 
         if (reminderDays <= 1) {
             return "High";
-        } else if (reminderDays <= 3) {
+        }
+
+        else if (reminderDays <= 3) {
             return "Medium";
-        } else {
+        }
+
+        else {
             return "Low";
         }
     }
 
-
+    // Method overriding
     @Override
     public String toString() {
 
-        return "Assignment: " + getName() + ", Due Date: " + getDueDate() + ", Estimated Hours: "
-                + estimatedHours + ", Reminder: " + reminderDays + " day(s) before" + ", Priority: " + getPriorityLevel();
-    @Override
-    public String toString() {
-        return "Assignment: " + name +
-                ", Due Date: " + dueDate +
-                ", Estimated Hours: " + estimatedHours +
-                ", Reminder: " + reminderDays + " day(s) before";
+        return "Assignment: " + getName()
+                + ", Due Date: " + getDueDate()
+                + ", Estimated Hours: " + estimatedHours
+                + ", Reminder: " + reminderDays + " day(s) before"
+                + ", Priority: " + getPriorityLevel();
     }
 }
