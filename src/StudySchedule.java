@@ -18,6 +18,9 @@ public class StudySchedule {
     }
 
     // Sort assignments so the nearest due date is first
+    /**
+     * Sorts assignments by closest due date.
+     */
     public void sortAssignmentsByDueDate() {
         Collections.sort(assignments, Comparator.comparing(Assignment::getDueDate));
     }
@@ -31,6 +34,10 @@ public class StudySchedule {
     }
 
     // Calculate study hours per day
+    /**
+     * Calculates and displays the number
+     * of study hours needed per day.
+     */
     public void displayDailyWorkload() {
         System.out.println("\n- DAILY STUDY WORKLOAD -");
         LocalDate today = LocalDate.now();
@@ -50,7 +57,9 @@ public class StudySchedule {
                     assignment.getName(), dailyHours, daysLeft);
         }
     }
-
+    /**
+     * Collects assignment information from the user.
+     */
     public ArrayList<Assignment> getAssignments() {
         return assignments;
     }
